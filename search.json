@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "2024-06-11-fdrs-workshop.html#contributors",
+    "href": "2024-06-11-fdrs-workshop.html#contributors",
+    "title": "Festival of Digital Research and Scholarship",
+    "section": "👥 Contributors",
+    "text": "👥 Contributors\n\n\n\n\n\n\nPaddy Roddy\n\n\n\n\n\n\nSam Cunliffe\n\n\n\n\n\n\nDavid Stansby\n\n\n\n\n\n\nMatt Graham\n\n\n\n\n\n\nSofía Miñano\n\n\n\n\n\n\nPaul Smith\n\n\n\n\n\n\n\n\nRuaridh Gollifer\n\n\n\n\n\n\nMiguel Xochicale\n\n\n\n\n\n\nYidil Ozdemir\n\n\n\n\n\n\nMosè Giordano\n\n\n\n\n\n\nTom Young\n\n\n\n\n\n\nAlessandro Felder\n\n\n\n\n\n\n\n\nAdam Tyson\n\n\n\n\n\n\nWill Graham\n\n\n\n\n\n\nNik Khadijah Nik Aznan\n\n\n\n\n\n\nKatie Buntić\n\n\n\n\n\n\nRobert Vickerstaff\n\n\n\n\n\n\nDavid Pérez-Suárez\n\n\n\n\nThis project is the result of the contributions of a large number of people from across ARC and also other departments in UCL such as the Department of Mechanical Engineering and Sainsburys Wellcome Centre. Of particular note are David Stansby, who had the initial idea and organized the original doc-a-thon sessions which got the ball rolling on the project, and Paddy Roddy and Sam Cunliffe, who both have made significant contributions and done a lot of the on-going event organization and project management."
+  },
+  {
+    "objectID": "2024-06-11-fdrs-workshop.html#introduction",
+    "href": "2024-06-11-fdrs-workshop.html#introduction",
+    "title": "Festival of Digital Research and Scholarship",
+    "section": "💡 Introduction",
+    "text": "💡 Introduction\n\n\n\n\n\n\n\n\n\n\n\nTo give a bit of initial context:\nThe Python programming language is widely used in research software, due to its ease of use, wide ecosystem of existing libraries and open-source licencing.\nPython packages are a way to organize Python code into reusable components, and so are a vital part of building sustainable research software in Python.\nA common dilemma faced by researchers using Python is the paralysis of choice that comes from the incredibly wide range of tools available for developing, testing, documenting and benchmarking Python packages, with it often unclear what constitutes good choices of tools to use.\nThe python-tooling project is a set of resources developed by UCL ARC to help researchers in choosing and setting up tooling to use in Python research software projects."
+  },
+  {
+    "objectID": "2024-06-11-fdrs-workshop.html#overview",
+    "href": "2024-06-11-fdrs-workshop.html#overview",
+    "title": "Festival of Digital Research and Scholarship",
+    "section": "🔎 Overview",
+    "text": "🔎 Overview\n\n\n🚦 Tool recommendations website  https://github-pages.arc.ucl.ac.uk/python-tooling\n🍪 Package cookiecutter template  https://github.com/UCL-ARC/python-tooling\n\n\n\nThe project consists of\n\na website which uses a traffic light system to give recommendations on tools and services that are useful when building a Python package,\nand a cookiecutter template that can be used to quickly set up a Python package with our tooling recommendations to ensure that a new project adheres with good research software development practice."
+  },
+  {
+    "objectID": "2024-06-11-fdrs-workshop.html#tool-recommendations-website",
+    "href": "2024-06-11-fdrs-workshop.html#tool-recommendations-website",
+    "title": "Festival of Digital Research and Scholarship",
+    "section": "🚦 Tool recommendations website",
+    "text": "🚦 Tool recommendations website\n\nThe website has pages giving recommendations on a range of different categories of tools and services, such as utilities for benchmarking and profiling code to improve performance, generating documentation and writing and running tests.\nOn each page a table listing relevant tools and packages with a link to the package or service, a short summary and a traffic light recommendation for each.\nThe traffic lights are meant to give a quick opinionated suggestion of the tools we most recommend for a particular task."
+  },
+  {
+    "objectID": "2024-06-11-fdrs-workshop.html#template-demo",
+    "href": "2024-06-11-fdrs-workshop.html#template-demo",
+    "title": "Festival of Digital Research and Scholarship",
+    "section": "🍪 Template demo",
+    "text": "🍪 Template demo\n\nWe’ll now give a short demo of how the cookiecutter template can be used by researchers to quickly create a Python package which integrates lots of elements of good practice in creating sustainable research software such as use of Git for version control, automated testing and linting and a documentation website.\nTo create an instance of template you will need to first install the cookiecutter package (for example using conda) and then run\ncookiecutter gh:ucl-arc/python-tooling\n(Briefly explain prompts, using default options other than\n[4/14] Name of project: Festival of DRS demo\n[9/14] Automatically deploy HTML docs?: Y\n[10/14] GitHub owner: UCL-ARC\nfor later commands and links to work)\nYou will then get some helpful output telling you to run\ngh repo create UCL-ARC/festival-of-drs-demo -d 'A cookiecutter package with UCL ARC recommendations.' --public -r origin --source festival-of-drs-demo\nto create a repository on GitHub for the project if you have the GitHub command line interface installed.\nAs we selected to deploy the documentation to GitHub pages we are also told some further configuration to the repository we need to do, namely to go to\nhttps://github.com/UCL-ARC/festival-of-drs-demo/settings/actions\nand set Workflow permissions to Read and write permissions\nOnce we have done that we can then make an initial commit and push to our newly created repository on GitHub\ncd festival-of-drs-demo\ngit add .\ngit commit -m \"Initial commit\"\ngit push --set-upstream origin main\nIf we now go to\nhttps://github.com/UCL-ARC/festival-of-drs-demo/\nwe can see the repository is now populated with a README with some default content such as the project description, details of the project team, instructions for installing the package, running the tests and building the documentation locally (navigate to each of these sections in README). Using GitHub’s Citation File Format support we also have an easy way to automatically generate a citation for the repository (demo ‘Cite this repository’ button ).\nThe repository has also been set up with automated workflows for running tests, performing linting static analysis checks on the source code and building the documentation the status of which we can see from the badges on README page (show badges) or by going to the Actions pane\nhttps://github.com/UCL-ARC/python-tooling/actions\n(Wait for Documentation workflow to complete to ensure gh-pages branch has been created and pushed to.)\nTo enable the GitHub Page website for the repository there is one final step we need to do that is also printed in the message output by the cookiecutter command, which is to go to the settings page at\nhttps://github.com/UCL-ARC/festival-of-drs-demo/settings/pages\nand under ‘Built and deployment’ selecting ‘Deploy from a branch’ for the ‘Source’ drop-down and ‘gh-pages’ for the ‘Branch’ drop-down, leaving the branch path drop-down with its default value of ‘/ (root)’.\nOnce the documentation deploy action has finished running\nhttps://github.com/UCL-ARC/python-tooling/actions\n(Wait for pages-build-deployment action to complete)\nthe documentation can then be viewed at\nhttps://github-pages.arc.ucl.ac.uk/festival-of-drs-demo\nThe documentation site homepage is automatically set up to show the content from the repository README. Importantly however we also get automatically generated API documentation from the docstrings in the source code (go to API reference page). The project LICENSE is also displayed in documentation (go to License page)."
+  },
+  {
+    "objectID": "2024-06-11-fdrs-workshop.html#tutorial",
+    "href": "2024-06-11-fdrs-workshop.html#tutorial",
+    "title": "Festival of Digital Research and Scholarship",
+    "section": "👨‍🏫 Tutorial",
+    "text": "👨‍🏫 Tutorial\n\nhttps://tinyurl.com/python-tooling-tutorial"
+  },
+  {
+    "objectID": "2025-07-15-fdris-workshop.html#contributors",
+    "href": "2025-07-15-fdris-workshop.html#contributors",
+    "title": "Festival of Digital Research, Innovation and Scholarship",
+    "section": "👥 Contributors",
+    "text": "👥 Contributors\n\n\n\n\n\n\nPaddy Roddy\n\n\n\n\n\n\nSam Cunliffe\n\n\n\n\n\n\nDavid Stansby\n\n\n\n\n\n\nMatt Graham\n\n\n\n\n\n\nSofía Miñano\n\n\n\n\n\n\nPaul Smith\n\n\n\n\n\n\nRuaridh Gollifer\n\n\n\n\n\n\nMiguel Xochicale\n\n\n\n\n\n\n\n\nYidil Ozdemir\n\n\n\n\n\n\nMosè Giordano\n\n\n\n\n\n\nTom Young\n\n\n\n\n\n\nAlessandro Felder\n\n\n\n\n\n\nAdam Tyson\n\n\n\n\n\n\nWill Graham\n\n\n\n\n\n\nNik Khadijah Nik Aznan\n\n\n\n\n\n\nKatie Buntić\n\n\n\n\n\n\n\n\nRobert Vickerstaff\n\n\n\n\n\n\nDavid Pérez-Suárez\n\n\n\n\n\n\nLuke Lapira\n\n\n\n\n\n\nSaransh Chopra\n\n\n\n\n\n\nAndrew Mitchell\n\n\n\n\n\n\nKimberly Meechan\n\n\n\n\n\n\nJames Prime\n\n\n\n\n\n\nAndrii Tsapko\n\n\n\n\nThis project is the result of the contributions of a large number of people from across ARC and also other departments in UCL such as the Department of Mechanical Engineering and Sainsburys Wellcome Centre. Of particular note are David Stansby, who had the initial idea and organized the original doc-a-thon sessions which got the ball rolling on the project, and Paddy Roddy and Sam Cunliffe, who both have made significant contributions and done a lot of the on-going event organization and project management."
+  },
+  {
+    "objectID": "2025-07-15-fdris-workshop.html#introduction",
+    "href": "2025-07-15-fdris-workshop.html#introduction",
+    "title": "Festival of Digital Research, Innovation and Scholarship",
+    "section": "💡 Introduction",
+    "text": "💡 Introduction\n\n\n\n\n\n\n\n\n\n\n\nTo give a bit of initial context:\nThe Python programming language is widely used in research software, due to its ease of use, wide ecosystem of existing libraries and open-source licencing.\nPython packages are a way to organize Python code into reusable components, and so are a vital part of building sustainable research software in Python.\nA common dilemma faced by researchers using Python is the paralysis of choice that comes from the incredibly wide range of tools available for developing, testing, documenting and benchmarking Python packages, with it often unclear what constitutes good choices of tools to use.\nThe python-tooling project is a set of resources developed by UCL ARC to help researchers in choosing and setting up tooling to use in Python research software projects."
+  },
+  {
+    "objectID": "2025-07-15-fdris-workshop.html#overview",
+    "href": "2025-07-15-fdris-workshop.html#overview",
+    "title": "Festival of Digital Research, Innovation and Scholarship",
+    "section": "🔎 Overview",
+    "text": "🔎 Overview\n\n\n🚦 Tool recommendations website  https://github-pages.arc.ucl.ac.uk/python-tooling\n🍪 Package cookiecutter template  https://github.com/UCL-ARC/python-tooling\n\n\n\nThe project consists of\n\na website which uses a traffic light system to give recommendations on tools and services that are useful when building a Python package,\nand a cookiecutter template that can be used to quickly set up a Python package with our tooling recommendations to ensure that a new project adheres with good research software development practice."
+  },
+  {
+    "objectID": "2025-07-15-fdris-workshop.html#tool-recommendations-website",
+    "href": "2025-07-15-fdris-workshop.html#tool-recommendations-website",
+    "title": "Festival of Digital Research, Innovation and Scholarship",
+    "section": "🚦 Tool recommendations website",
+    "text": "🚦 Tool recommendations website\n\nThe website has pages giving recommendations on a range of different categories of tools and services, such as utilities for benchmarking and profiling code to improve performance, generating documentation and writing and running tests.\nOn each page a table listing relevant tools and packages with a link to the package or service, a short summary and a traffic light recommendation for each.\nThe traffic lights are meant to give a quick opinionated suggestion of the tools we most recommend for a particular task."
+  },
+  {
+    "objectID": "2025-07-15-fdris-workshop.html#template-demo",
+    "href": "2025-07-15-fdris-workshop.html#template-demo",
+    "title": "Festival of Digital Research, Innovation and Scholarship",
+    "section": "🍪 Template demo",
+    "text": "🍪 Template demo\n\n\n\n\n\n\nuvx cookiecutter gh:ucl-arc/python-tooling --checkout-latest"
+  },
+  {
+    "objectID": "2025-07-15-fdris-workshop.html#tutorial",
+    "href": "2025-07-15-fdris-workshop.html#tutorial",
+    "title": "Festival of Digital Research, Innovation and Scholarship",
+    "section": "👨‍🏫 Tutorial",
+    "text": "👨‍🏫 Tutorial\n\nhttps://tinyurl.com/py-tool-tutorial"
+  }
+]

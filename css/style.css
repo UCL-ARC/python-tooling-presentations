@@ -1,0 +1,25 @@
+.reveal h1.title {
+  font-size: 170%;
+}
+
+.reveal .slides section .compressed-list li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.reveal .slides section .no-bullet li {
+  list-style-type: none;
+}
+
+.reveal div.backgrounds {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+
+.reveal .slide-logo {
+  height: 105px !important;
+  width: 187px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
