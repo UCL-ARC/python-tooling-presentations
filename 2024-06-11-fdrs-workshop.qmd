@@ -1,0 +1,228 @@
+---
+title: Festival of Digital Research and Scholarship
+date: 2024-06-11
+date-format: long
+institute: Centre for Advanced Research Computing
+title-image: https://raw.githubusercontent.com/UCL-ARC/python-tooling/main/images/banner.svg
+title-image-width: 70%
+background-image: images/arc-banner.svg
+title-slide-attributes:
+  data-notes: |
+    Hi, welcome to the python-tooling workshop. I'm {name} a {profession} at the UCL Advanced Research Computing Centre or ARC for short.  
+    We are going to start the workshop today by giving a brief overview and demo of the python-tooling project,
+    which we've been working on in ARC to develop resources to assist researchers in choosing and setting up tooling to use in Python research software projects.  
+    After the demo is complete we will be running an interactive session
+    where you will have a chance to try using the tools yourself.
+    Myself and other ARC colleagues will be on hand to answer any questions you have 
+    and also to give advice using the tools in any existing Python research software projects you have.
+---
+
+## 👥 Contributors {.smaller}
+
+:::{.column width="80%"}
+
+:::::: {.columns}
+::: {.column width="16.6%"}
+[![Paddy Roddy](https://avatars.githubusercontent.com/u/15052188?v=4?s=100)](https://paddyroddy.github.io/)
+:::
+::: {.column width="16.6%"}
+[![Sam Cunliffe](https://avatars.githubusercontent.com/u/1836192?v=4?s=100)](http://scnlf.me)
+:::
+::: {.column width="16.7%"}
+[![David Stansby](https://avatars.githubusercontent.com/u/6197628?v=4?s=100)](https://www.davidstansby.com/)
+:::
+::: {.column width="16.6%"}
+[![Matt Graham](https://avatars.githubusercontent.com/u/6746980?v=4?s=100)](http://matt-graham.github.io)
+:::
+::: {.column width="16.6%"}
+[![Sofía Miñano](https://avatars.githubusercontent.com/u/33267254?v=4?s=100)](https://sfmig.github.io/)
+:::
+::: {.column width="16.6%"}
+[![Paul Smith](https://avatars.githubusercontent.com/u/29753790?v=4?s=100)](https://github.com/p-j-smith/)
+:::
+:::
+
+:::::: {.columns}
+::: {.column width="16.7%"}
+[![Ruaridh Gollifer](https://avatars.githubusercontent.com/u/32329546?v=4?s=100)](https://github.com/ruaridhg)
+:::
+::: {.column width="16.7%"}
+[![Miguel Xochicale](https://avatars.githubusercontent.com/u/11370681?v=4?s=100)](https://github.com/mxochicale)
+:::
+::: {.column width="16.6%"}
+[![Yidil Ozdemir](https://avatars.githubusercontent.com/u/30597301?v=4?s=100)](https://github.com/yidilozdemir)
+:::
+::: {.column width="16.7%"}
+[![Mosè Giordano](https://avatars.githubusercontent.com/u/765740?v=4?s=100)](https://giordano.github.io/)
+:::
+::: {.column width="16.6%"}
+[![Tom Young](https://avatars.githubusercontent.com/u/39765193?v=4?s=100)](http://t-young31.github.io/)
+:::
+::: {.column width="16.7%"}
+[![Alessandro Felder](https://avatars.githubusercontent.com/u/10500965?v=4?s=100)](https://github.com/alessandrofelder)
+:::
+:::
+
+:::::: {.columns}
+::: {.column width="16.7%"}
+[![Adam Tyson](https://avatars.githubusercontent.com/u/13147259?v=4?s=100)](http://adamltyson.com/)
+:::
+::: {.column width="16.7%"}
+[![Will Graham](https://avatars.githubusercontent.com/u/32364977?v=4?s=100)](https://willgraham01.github.io/)
+:::
+::: {.column width="16.6%"}
+[![Nik Khadijah Nik Aznan](https://avatars.githubusercontent.com/u/48319650?v=4?s=100)](https://github.com/nikk-nikaznan)
+:::
+::: {.column width="16.7%"}
+[![Katie Buntić](https://avatars.githubusercontent.com/u/96536608?v=4?s=100)](https://github.com/katiebuntic)
+:::
+::: {.column width="16.6%"}
+[![Robert Vickerstaff](https://avatars.githubusercontent.com/u/456100?v=4?s=100)](https://github.com/robertvi)
+:::
+::: {.column width="16.7%"}
+[![David Pérez-Suárez](https://avatars.githubusercontent.com/u/963242?v=4?s=100)](http://dpshelio.github.io)
+:::
+:::
+
+:::
+
+:::notes
+This project is the result of the contributions of a large number of people from across ARC and also other departments in UCL such as the Department of Mechanical Engineering and Sainsburys Wellcome Centre. Of particular note are David Stansby, who had the initial idea and organized the original doc-a-thon sessions which got the ball rolling on the project, and Paddy Roddy and Sam Cunliffe, who both have made significant contributions and done a lot of the on-going event organization and project management.
+:::
+
+## 💡 Introduction
+
+:::::: {.columns}
+::: {.column .fragment width="25%"}
+![](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg){height="300px"}
+:::
+::: {.column .fragment width="25%"}
+![](images/pypi-logo.svg){height="300px"}
+:::
+::: {.column .fragment width="25%"}
+![](images/paralysis-of-choice.svg){height="300px"}
+:::
+::: {.column .fragment width="25%"}
+![](https://raw.githubusercontent.com/UCL-ARC/python-tooling/main/images/logo.svg){height="300px"}
+:::
+:::
+
+:::notes
+To give a bit of initial context:
+
+The Python programming language is widely used in research software, due to its ease of use, wide ecosystem of existing libraries and open-source licencing. 
+
+Python packages are a way to organize Python code into reusable components, and so are a vital part of building sustainable research software in Python.
+
+A common dilemma faced by researchers using Python is the paralysis of choice that comes from the incredibly wide range of tools available for developing, testing, documenting and benchmarking Python packages, with it often unclear what constitutes good choices of tools to use.
+
+The `python-tooling` project is a set of resources developed by UCL ARC to help researchers in choosing and setting up tooling to use in Python research software projects.
+:::
+
+## 🔎 Overview
+
+:::{.no-bullet}
+- 🚦 Tool recommendations website  <br /> <https://github-pages.arc.ucl.ac.uk/python-tooling>
+- 🍪 Package cookiecutter template  <br /> <https://github.com/UCL-ARC/python-tooling>
+:::
+
+:::notes
+The project consists of
+
+- a website which uses a traffic light system to give recommendations on tools and services that are useful when building a Python package, 
+- and a cookiecutter template that can be used to quickly set up a Python package with our tooling recommendations to ensure that a new project adheres with good research software development practice.
+:::
+
+## 🚦 Tool recommendations website
+
+:::notes
+The website has pages giving recommendations on a range of different categories of tools and services, such as utilities for benchmarking and profiling code to improve performance, generating documentation and writing and running tests. 
+
+On each page a table listing relevant tools and packages with a link to the package or service, a short summary and a traffic light recommendation for each. 
+
+The traffic lights are meant to give a quick opinionated suggestion of the tools we most recommend for a particular task.
+:::
+
+```{=html}
+<iframe src="https://github-pages.arc.ucl.ac.uk/python-tooling" title="UCL ARC Python tooling website" width="1000" height="500" style="border:none;" ></iframe>
+```
+
+## 🍪 Template demo
+
+:::notes
+We'll now give a short demo of how the cookiecutter template can be used by researchers to quickly create a Python package which integrates lots of elements of good practice in creating sustainable research software such as use of Git for version control, automated testing and linting and a documentation website.
+
+To create an instance of template you will need to first install the `cookiecutter` package (for example using `conda`) and then run
+```
+cookiecutter gh:ucl-arc/python-tooling
+```
+
+(Briefly explain prompts, using default options other than
+
+```
+[4/14] Name of project: Festival of DRS demo
+[9/14] Automatically deploy HTML docs?: Y
+[10/14] GitHub owner: UCL-ARC
+```
+
+for later commands and links to work)
+
+You will then get some helpful output telling you to run
+
+```
+gh repo create UCL-ARC/festival-of-drs-demo -d 'A cookiecutter package with UCL ARC recommendations.' --public -r origin --source festival-of-drs-demo
+```
+
+to create a repository on GitHub for the project if you have the GitHub command line interface installed.
+
+As we selected to deploy the documentation to GitHub pages we are also told some further configuration to the repository we need to do, namely to go to
+
+https://github.com/UCL-ARC/festival-of-drs-demo/settings/actions
+
+and set `Workflow permissions` to `Read and write permissions`
+
+Once we have done that we can then make an initial commit and push to our newly created repository on GitHub
+
+```
+cd festival-of-drs-demo
+git add .
+git commit -m "Initial commit"
+git push --set-upstream origin main
+```
+
+If we now go to 
+
+https://github.com/UCL-ARC/festival-of-drs-demo/
+
+we can see the repository is now populated with a README with some default content such as the project description, details of the project team, instructions for installing the package, running the tests and building the documentation locally (navigate to each of these sections in README). Using GitHub's Citation File Format support we also have an easy way to automatically generate a citation for the repository (demo 'Cite this repository' button ). 
+
+The repository has also been set up with automated workflows for running tests, performing linting static analysis checks on the source code and building the documentation the status of which we can see from the badges on README page (show badges) or by going to the Actions pane
+
+https://github.com/UCL-ARC/python-tooling/actions
+
+(Wait for `Documentation` workflow to complete to ensure `gh-pages` branch has been created and pushed to.)
+
+To enable the GitHub Page website for the repository there is one final step we need to do that is also printed in the message output by the `cookiecutter` command, which is to go to the settings page at
+
+https://github.com/UCL-ARC/festival-of-drs-demo/settings/pages
+
+and under 'Built and deployment' selecting 'Deploy from a branch' for the 'Source' drop-down and 'gh-pages' for the 'Branch' drop-down, leaving the branch path drop-down with its default value of '/ (root)'.
+
+Once the documentation deploy action has finished running 
+
+https://github.com/UCL-ARC/python-tooling/actions
+
+(Wait for `pages-build-deployment` action to complete)
+
+the documentation can then be viewed at
+
+https://github-pages.arc.ucl.ac.uk/festival-of-drs-demo
+
+The documentation site homepage is automatically set up to show the content from the repository README. Importantly however we also get automatically generated API documentation from the docstrings in the source code (go to API reference page). The project LICENSE is also displayed in documentation (go to License page).
+:::
+
+## 👨‍🏫 Tutorial
+
+![](images/2024-tutorial-qr-code.svg)
+
+<https://tinyurl.com/python-tooling-tutorial>

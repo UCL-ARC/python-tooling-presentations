@@ -1,0 +1,189 @@
+## 🏛️ Introducing ARC
+
+> UCL’s research, innovation & service centre for the tools, practices, systems and people that enable computational science and digital scholarship.
+
+- We provide advanced, reliable and secure digital research infrastructure – including hardware, software, data and skills – to researchers in UCL and beyond​.
+- We are a laboratory for research, teaching and innovation in compute, data and software intensive research methods​.
+
+## 🧑‍💻 Professional expertise
+
+:::columns
+
+:::{.column width="33%"}
+
+::: {.callout-note .nonincremental .fragment icon=false }
+## Software engineering
+- Create efficient, reliable, reusable & sustainable code​
+- Mentor in good practices
+:::
+
+:::
+
+:::{.column width="33%"}
+
+::: {.callout-note .nonincremental .fragment icon=false }
+## Data science
+- Derive insights from data​
+- Develop novel algorithms / tools​
+- Modelling & simulation
+:::
+
+:::
+
+:::{.column width="33%"}
+
+::: {.callout-note .nonincremental .fragment icon=false }
+## Data stewardship
+- Extracting long-term value from data
+- Data engineering & pipelines​
+- Publishing (FAIR) data
+:::
+
+:::
+
+:::
+
+:::columns
+
+:::{.column width="50%"}
+
+::: {.callout-note .nonincremental .fragment icon=false }
+## Infrastructure development
+- Design, build & maintain custom hardware & software infrastructure
+- Create performant, resilient systems​
+:::
+
+:::
+
+:::{.column width="50%"}
+
+::: {.callout-note .nonincremental .fragment icon=false }
+## Investment & strategy management
+- Supporting & directing research activities​
+- Delivery of large-scale projects
+:::
+
+:::
+
+:::
+
+::: {.r-fit-text .fragment}
+More details at <https://www.ucl.ac.uk/arc/research-technology-professionals​>
+::: 
+
+## 🧑‍🏫 Training and support
+
+:::columns
+
+::: {.column width="25%"}
+
+::: {.callout-tip .nonincremental .fragment icon=false }
+## MSc modules
+- RSE with Python
+- Research computing
+- Machine learning with big data
+- Engineering for data analysis
+:::
+
+:::
+
+::: {.column width="25%"}
+
+::: {.callout-tip .nonincremental .fragment icon=false }
+## Training
+- Becoming a digital researcher
+- Improving research software
+- Using high performance computing
+:::
+
+:::
+
+::: {.column width="25%"}
+
+::: {.callout-tip .nonincremental .fragment icon=false }
+## Drop-in & support
+- In person and online drop-in sessions
+- Slack workspace for community discussion
+- Extensive online guides
+:::
+
+:::
+
+::: {.column width="25%"}
+
+::: {.callout-tip .nonincremental .fragment icon=false }
+## Centre for Doctoral Training
+- Collaborative Computational Modelling at the Interface
+- Joint venture between UCL & Imperial
+- EPSRC funded
+:::
+
+:::
+
+:::
+
+::: {.r-fit-text .fragment}
+More details at <https://www.ucl.ac.uk/arc/education​>  
+:::
+
+## 🖥️ Platforms and services
+
+:::columns
+
+::: {.column .fragment width="50%"}
+
+__Research computing__
+
+::: {.callout-note appearance="minimal"}
+Myriad (high throughput computing)
+:::
+
+::: {.callout-note appearance="minimal"}
+Kathleen (high performance computing)
+:::
+
+::: {.callout-note appearance="minimal"}
+Contender (novel architectures)
+:::
+
+::: {.callout-note appearance="minimal"}
+Aristotle, JupyterHub, RStudio (teaching)
+:::
+
+::: {.callout-note appearance="minimal"}
+Trusted research environment
+:::
+
+:::
+
+::: {.column .fragment width="50%"}
+
+__Research data__
+
+::: {.callout-note appearance="minimal"}
+Research data storage (ongoing)
+:::
+
+::: {.callout-note appearance="minimal"}
+Research data repository (archival)
+:::
+
+::: {.callout-note appearance="minimal"}
+Research data transfer (inter-institution)
+:::
+
+::: {.callout-note appearance="minimal"}
+Electronic research notebook
+:::
+
+::: {.callout-note appearance="minimal"}
+Harbour (external data)
+:::
+
+:::
+
+:::
+
+::: {.r-fit-text .fragment}
+More details at <https://www.ucl.ac.uk/arc/platforms-and-services>  
+:::

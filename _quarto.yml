@@ -1,0 +1,18 @@
+project:
+  output-dir: _output
+format:
+  revealjs:
+    incremental: true
+    css:
+      - css/style.css
+      - css/asciinema-player.css
+    slide-number: true
+    margin: 0.15
+    template-partials:
+      - templates/title-slide.html
+resources:
+  - images/arc-banner.svg
+  - images/arc-logo.svg
+  - images/python-tooling.cast
+  - js/asciinema-player.min.js
+

@@ -1,0 +1,33 @@
+name: Render Quarto slides template
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: 0 0 * * 0
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Check Quarto version
+        run: quarto --version
+      - name: Render Quarto slides
+        run: quarto render . --to revealjs
+      - name: Upload rendered slides as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-quarto-slides
+          path: _output

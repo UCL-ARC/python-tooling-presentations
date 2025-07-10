@@ -1,0 +1,194 @@
+---
+title: Festival of Digital Research, Innovation and Scholarship
+date: 2025-07-15
+date-format: long
+institute: UCL Centre for Advanced Research Computing
+title-image: https://raw.githubusercontent.com/UCL-ARC/python-tooling/main/images/banner.svg
+title-image-width: 70%
+background-image: images/arc-banner.svg
+title-slide-attributes:
+  data-notes: |
+    Hi, welcome to the python-tooling workshop. I'm {name} a {profession} at the UCL Advanced Research Computing Centre or ARC for short.  
+    We are going to start the workshop today by giving a brief overview and demo of the python-tooling project,
+    which we've been working on in ARC to develop resources to assist researchers in choosing and setting up tooling to use in Python research software projects.  
+    After the demo is complete we will be running an interactive session
+    where you will have a chance to try using the tools yourself.
+    Myself and other ARC colleagues will be on hand to answer any questions you have 
+    and also to give advice using the tools in any existing Python research software projects you have.
+---
+
+## 👥 Contributors {.smaller}
+
+:::{.column width="90%"}
+
+:::::: {.columns}
+::: {.column width="12.5%"}
+[![Paddy Roddy](https://avatars.githubusercontent.com/u/15052188?v=4?s=100)](https://paddyroddy.github.io/)
+:::
+::: {.column width="12.5%"}
+[![Sam Cunliffe](https://avatars.githubusercontent.com/u/1836192?v=4?s=100)](http://scnlf.me)
+:::
+::: {.column width="12.5%"}
+[![David Stansby](https://avatars.githubusercontent.com/u/6197628?v=4?s=100)](https://www.davidstansby.com/)
+:::
+::: {.column width="12.5%"}
+[![Matt Graham](https://avatars.githubusercontent.com/u/6746980?v=4?s=100)](http://matt-graham.github.io)
+:::
+::: {.column width="12.5%"}
+[![Sofía Miñano](https://avatars.githubusercontent.com/u/33267254?v=4?s=100)](https://sfmig.github.io/)
+:::
+::: {.column width="12.5%"}
+[![Paul Smith](https://avatars.githubusercontent.com/u/29753790?v=4?s=100)](https://github.com/p-j-smith/)
+:::
+::: {.column width="12.5%"}
+[![Ruaridh Gollifer](https://avatars.githubusercontent.com/u/32329546?v=4?s=100)](https://github.com/ruaridhg)
+:::
+::: {.column width="12.5%"}
+[![Miguel Xochicale](https://avatars.githubusercontent.com/u/11370681?v=4?s=100)](https://github.com/mxochicale)
+:::
+:::
+
+:::::: {.columns}
+::: {.column width="12.5%"}
+[![Yidil Ozdemir](https://avatars.githubusercontent.com/u/30597301?v=4?s=100)](https://github.com/yidilozdemir)
+:::
+::: {.column width="12.5%"}
+[![Mosè Giordano](https://avatars.githubusercontent.com/u/765740?v=4?s=100)](https://giordano.github.io/)
+:::
+::: {.column width="12.5%"}
+[![Tom Young](https://avatars.githubusercontent.com/u/39765193?v=4?s=100)](http://t-young31.github.io/)
+:::
+::: {.column width="12.5%"}
+[![Alessandro Felder](https://avatars.githubusercontent.com/u/10500965?v=4?s=100)](https://github.com/alessandrofelder)
+:::
+::: {.column width="12.5%"}
+[![Adam Tyson](https://avatars.githubusercontent.com/u/13147259?v=4?s=100)](http://adamltyson.com/)
+:::
+::: {.column width="12.5%"}
+[![Will Graham](https://avatars.githubusercontent.com/u/32364977?v=4?s=100)](https://willgraham01.github.io/)
+:::
+::: {.column width="12.5%"}
+[![Nik Khadijah Nik Aznan](https://avatars.githubusercontent.com/u/48319650?v=4?s=100)](https://github.com/nikk-nikaznan)
+:::
+::: {.column width="12.5%"}
+[![Katie Buntić](https://avatars.githubusercontent.com/u/96536608?v=4?s=100)](https://github.com/katiebuntic)
+:::
+:::
+
+:::::: {.columns}
+::: {.column width="12.5%"}
+[![Robert Vickerstaff](https://avatars.githubusercontent.com/u/456100?v=4?s=100)](https://github.com/robertvi)
+:::
+::: {.column width="12.5%"}
+[![David Pérez-Suárez](https://avatars.githubusercontent.com/u/963242?v=4?s=100)](http://dpshelio.github.io)
+:::
+::: {.column width="12.5%"}
+[![Luke Lapira](https://avatars.githubusercontent.com/u/48060852?v=4?s=100)](http://luke.lapira.eu/)
+:::
+::: {.column width="12.5%"}
+[![Saransh Chopra](https://avatars.githubusercontent.com/u/74055102?v=4?s=100)](https://saransh-cpp.github.io/)
+:::
+::: {.column width="12.5%"}
+[![Andrew Mitchell](https://avatars.githubusercontent.com/u/22335636?v=4?s=100)](http://drandrewmitchell.com/)
+:::
+::: {.column width="12.5%"}
+[![Kimberly Meechan](https://avatars.githubusercontent.com/u/24316371?v=4?s=100)](https://profiles.ucl.ac.uk/96751-kimberly-meechan)
+:::
+::: {.column width="12.5%"}
+[![James Prime](https://avatars.githubusercontent.com/u/17751241?v=4?s=100)](https://github.com/jamesprime)
+:::
+::: {.column width="12.5%"}
+[![Andrii Tsapko](https://avatars.githubusercontent.com/u/28014041?v=4?s=100)](https://github.com/cuteshaun)
+:::
+:::
+
+:::
+
+:::notes
+This project is the result of the contributions of a large number of people from across ARC and also other departments in UCL such as the Department of Mechanical Engineering and Sainsburys Wellcome Centre. Of particular note are David Stansby, who had the initial idea and organized the original doc-a-thon sessions which got the ball rolling on the project, and Paddy Roddy and Sam Cunliffe, who both have made significant contributions and done a lot of the on-going event organization and project management.
+:::
+
+## 💡 Introduction
+
+:::::: {.columns}
+::: {.column .fragment width="25%"}
+![](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg){height="300px"}
+:::
+::: {.column .fragment width="25%"}
+![](images/pypi-logo.svg){height="300px"}
+:::
+::: {.column .fragment width="25%"}
+![](images/paralysis-of-choice.svg){height="300px"}
+:::
+::: {.column .fragment width="25%"}
+![](https://raw.githubusercontent.com/UCL-ARC/python-tooling/main/images/logo.svg){height="300px"}
+:::
+:::
+
+:::notes
+To give a bit of initial context:
+
+The Python programming language is widely used in research software, due to its ease of use, wide ecosystem of existing libraries and open-source licencing. 
+
+Python packages are a way to organize Python code into reusable components, and so are a vital part of building sustainable research software in Python.
+
+A common dilemma faced by researchers using Python is the paralysis of choice that comes from the incredibly wide range of tools available for developing, testing, documenting and benchmarking Python packages, with it often unclear what constitutes good choices of tools to use.
+
+The `python-tooling` project is a set of resources developed by UCL ARC to help researchers in choosing and setting up tooling to use in Python research software projects.
+:::
+
+## 🔎 Overview
+
+:::{.no-bullet}
+- 🚦 Tool recommendations website  <br /> <https://github-pages.arc.ucl.ac.uk/python-tooling>
+- 🍪 Package cookiecutter template  <br /> <https://github.com/UCL-ARC/python-tooling>
+:::
+
+:::notes
+The project consists of
+
+- a website which uses a traffic light system to give recommendations on tools and services that are useful when building a Python package, 
+- and a cookiecutter template that can be used to quickly set up a Python package with our tooling recommendations to ensure that a new project adheres with good research software development practice.
+:::
+
+## 🚦 Tool recommendations website
+
+:::notes
+The website has pages giving recommendations on a range of different categories of tools and services, such as utilities for benchmarking and profiling code to improve performance, generating documentation and writing and running tests. 
+
+On each page a table listing relevant tools and packages with a link to the package or service, a short summary and a traffic light recommendation for each. 
+
+The traffic lights are meant to give a quick opinionated suggestion of the tools we most recommend for a particular task.
+:::
+
+```{=html}
+<iframe src="https://github-pages.arc.ucl.ac.uk/python-tooling" title="UCL ARC Python tooling website" width="1000" height="500" style="border:none;" ></iframe>
+```
+
+## 🍪 Template demo
+
+<div id="python-tooling-demo"></div>
+<script src="/js/asciinema-player.min.js"></script>
+<script>
+AsciinemaPlayer.create('/images/python-tooling.cast', document.getElementById('python-tooling-demo'), {
+  speed: 1,
+  cols: 115,
+  height: 16,
+  autoPlay: false,
+  preload: true
+});
+</script>
+
+:::notes
+
+```
+uvx cookiecutter gh:ucl-arc/python-tooling --checkout-latest
+```
+
+:::
+
+## 👨‍🏫 Tutorial
+
+![](images/gh-tutorial-qr-code.svg)
+
+<https://tinyurl.com/py-tool-tutorial>
