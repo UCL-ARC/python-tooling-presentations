@@ -31,3 +31,12 @@ jobs:
         with:
           name: rendered-quarto-slides
           path: _output
+      - name: Publish on GitHub pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN  }}
+          publish_dir: _output
+          publish_branch: gh-pages
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
