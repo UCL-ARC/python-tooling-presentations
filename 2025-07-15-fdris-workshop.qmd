@@ -187,7 +187,7 @@ uvx cookiecutter gh:ucl-arc/python-tooling --checkout-latest
 
 :::
 
-## 👨‍🏫 Tutorial
+## 🧑‍🏫 Tutorial
 
 ![](images/gh-tutorial-qr-code.svg)
 
