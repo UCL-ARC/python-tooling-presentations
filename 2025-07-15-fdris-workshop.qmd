@@ -170,8 +170,8 @@ The traffic lights are meant to give a quick opinionated suggestion of the tools
 <div id="python-tooling-demo"></div>
 <script src="/js/asciinema-player.min.js"></script>
 <script>
-AsciinemaPlayer.create('/images/python-tooling.cast', document.getElementById('python-tooling-demo'), {
-  speed: 1,
+AsciinemaPlayer.create('images/python-tooling.cast', document.getElementById('python-tooling-demo'), {
+  speed: 0.75,
   cols: 115,
   height: 16,
   autoPlay: false,
