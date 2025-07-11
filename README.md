@@ -1,6 +1,6 @@
 # python-tooling presentations
 
-Presentations for UCL ARC [`python tooling`](https://github.com/UCL-ARC/python-tooling) project as [revealjs slide decks using Quarto](https://quarto.org/docs/presentations/revealjs/).
+Presentations for UCL ARC [`python-tooling`](https://github.com/UCL-ARC/python-tooling) project as [revealjs slide decks using Quarto](https://quarto.org/docs/presentations/revealjs/).
 
 ## Rendering locally
 
