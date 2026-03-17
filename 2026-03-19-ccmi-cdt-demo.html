@@ -9,8 +9,8 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.27">
 
-  <meta name="dcterms.date" content="2024-06-11">
-  <title>Festival of Digital Research and Scholarship</title>
+  <meta name="dcterms.date" content="2026-03-19">
+  <title>CCMI CDT software week demo</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,146 +128,209 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-notes="<p>Hi, welcome to the python-tooling workshop. I’m {name} a {profession} at the UCL Advanced Research Computing Centre or ARC for short. We are going to start the workshop today by giving a brief overview and demo of the python-tooling project, which we’ve been working on in ARC to develop resources to assist researchers in choosing and setting up tooling to use in Python research software projects. After the demo is complete we will be running an interactive session where you will have a chance to try using the tools yourself. Myself and other ARC colleagues will be on hand to answer any questions you have and also to give advice using the tools in any existing Python research software projects you have.</p>" class="center">
-    <h1 class="title">Festival of Digital Research and Scholarship</h1>
+<section id="title-slide" class="center">
+    <h1 class="title">CCMI CDT software week demo</h1>
         <figure>
       <img src="https://raw.githubusercontent.com/UCL-ARC/python-tooling/main/images/banner.svg" width="70%">
       </figure>
-          <p class="institute" style="color: #999;">Centre for Advanced Research Computing</p>
-        <p class="date">June 11, 2024</p>
+          <p class="institute" style="color: #999;">UCL Centre for Advanced Research Computing</p>
+        <p class="date">March 19, 2026</p>
   </section>
 <section id="contributors" class="slide level2 smaller">
 <h2>👥 Contributors</h2>
-<div class="column" style="width:80%;">
+<div class="column" style="width:90%;">
 <div class="columns">
-<div class="column" style="width:16.6%;">
+<div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://paddyroddy.github.io/"><img data-src="https://avatars.githubusercontent.com/u/15052188?v=4?s=100.png"></a></p>
 <figcaption>Paddy Roddy</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.6%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="http://scnlf.me"><img data-src="https://avatars.githubusercontent.com/u/1836192?v=4?s=100.png"></a></p>
 <figcaption>Sam Cunliffe</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.7%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://www.davidstansby.com/"><img data-src="https://avatars.githubusercontent.com/u/6197628?v=4?s=100.png"></a></p>
 <figcaption>David Stansby</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.6%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="http://matt-graham.github.io"><img data-src="https://avatars.githubusercontent.com/u/6746980?v=4?s=100.png"></a></p>
 <figcaption>Matt Graham</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.6%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://sfmig.github.io/"><img data-src="https://avatars.githubusercontent.com/u/33267254?v=4?s=100.png"></a></p>
 <figcaption>Sofía Miñano</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.6%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://github.com/p-j-smith/"><img data-src="https://avatars.githubusercontent.com/u/29753790?v=4?s=100.png"></a></p>
 <figcaption>Paul Smith</figcaption>
 </figure>
 </div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:16.7%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://github.com/ruaridhg"><img data-src="https://avatars.githubusercontent.com/u/32329546?v=4?s=100.png"></a></p>
 <figcaption>Ruaridh Gollifer</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.7%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://github.com/mxochicale"><img data-src="https://avatars.githubusercontent.com/u/11370681?v=4?s=100.png"></a></p>
 <figcaption>Miguel Xochicale</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.6%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://github.com/yidilozdemir"><img data-src="https://avatars.githubusercontent.com/u/30597301?v=4?s=100.png"></a></p>
 <figcaption>Yidil Ozdemir</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.7%;">
+</div></div>
+<div class="columns">
+<div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://giordano.github.io/"><img data-src="https://avatars.githubusercontent.com/u/765740?v=4?s=100.png"></a></p>
 <figcaption>Mosè Giordano</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.6%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="http://t-young31.github.io/"><img data-src="https://avatars.githubusercontent.com/u/39765193?v=4?s=100.png"></a></p>
 <figcaption>Tom Young</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.7%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://github.com/alessandrofelder"><img data-src="https://avatars.githubusercontent.com/u/10500965?v=4?s=100.png"></a></p>
 <figcaption>Alessandro Felder</figcaption>
 </figure>
 </div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:16.7%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="http://adamltyson.com/"><img data-src="https://avatars.githubusercontent.com/u/13147259?v=4?s=100.png"></a></p>
 <figcaption>Adam Tyson</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.7%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://willgraham01.github.io/"><img data-src="https://avatars.githubusercontent.com/u/32364977?v=4?s=100.png"></a></p>
 <figcaption>Will Graham</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.6%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://github.com/nikk-nikaznan"><img data-src="https://avatars.githubusercontent.com/u/48319650?v=4?s=100.png"></a></p>
 <figcaption>Nik Khadijah Nik Aznan</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.7%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://github.com/katiebuntic"><img data-src="https://avatars.githubusercontent.com/u/96536608?v=4?s=100.png"></a></p>
 <figcaption>Katie Buntić</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.6%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://github.com/robertvi"><img data-src="https://avatars.githubusercontent.com/u/456100?v=4?s=100.png"></a></p>
 <figcaption>Robert Vickerstaff</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:16.7%;">
+</div><div class="column" style="width:11.1%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="http://dpshelio.github.io"><img data-src="https://avatars.githubusercontent.com/u/963242?v=4?s=100.png"></a></p>
 <figcaption>David Pérez-Suárez</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="http://luke.lapira.eu/"><img data-src="https://avatars.githubusercontent.com/u/48060852?v=4?s=100.png"></a></p>
+<figcaption>Luke Lapira</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://saransh-cpp.github.io/"><img data-src="https://avatars.githubusercontent.com/u/74055102?v=4?s=100.png"></a></p>
+<figcaption>Saransh Chopra</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="http://drandrewmitchell.com/"><img data-src="https://avatars.githubusercontent.com/u/22335636?v=4?s=100.png"></a></p>
+<figcaption>Andrew Mitchell</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://profiles.ucl.ac.uk/96751-kimberly-meechan"><img data-src="https://avatars.githubusercontent.com/u/24316371?v=4?s=100.png"></a></p>
+<figcaption>Kimberly Meechan</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://github.com/jamesprime"><img data-src="https://avatars.githubusercontent.com/u/17751241?v=4?s=100.png"></a></p>
+<figcaption>James Prime</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://github.com/cuteshaun"><img data-src="https://avatars.githubusercontent.com/u/28014041?v=4?s=100.png"></a></p>
+<figcaption>Andrii Tsapko</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="http://james.briant.co.uk/"><img data-src="https://avatars.githubusercontent.com/u/6298711?v=4?s=100.png"></a></p>
+<figcaption>James Briant</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://github.com/stellaprins"><img data-src="https://avatars.githubusercontent.com/u/30465823?v=4?s=100.png"></a></p>
+<figcaption>Stella Prins</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:11.1%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://github.com/connoraird"><img data-src="https://avatars.githubusercontent.com/u/61978554?v=4?s=100.png"></a></p>
+<figcaption>Connor Aird</figcaption>
 </figure>
 </div>
 </div></div>
@@ -362,41 +425,21 @@
 </section>
 <section id="template-demo" class="slide level2">
 <h2>🍪 Template demo</h2>
+<div id="python-tooling-demo">
+
+</div>
+<script src="./js/asciinema-player.min.js"></script>
+<script>
+AsciinemaPlayer.create('images/python-tooling.cast', document.getElementById('python-tooling-demo'), {
+  speed: 0.75,
+  cols: 115,
+  height: 16,
+  autoPlay: false,
+  preload: true
+});
+</script>
 <aside class="notes">
-<p>We’ll now give a short demo of how the cookiecutter template can be used by researchers to quickly create a Python package which integrates lots of elements of good practice in creating sustainable research software such as use of Git for version control, automated testing and linting and a documentation website.</p>
-<p>To create an instance of template you will need to first install the <code>cookiecutter</code> package (for example using <code>conda</code>) and then run</p>
-<pre><code>cookiecutter gh:ucl-arc/python-tooling</code></pre>
-<p>(Briefly explain prompts, using default options other than</p>
-<pre><code>[4/14] Name of project: Festival of DRS demo
-[9/14] Automatically deploy HTML docs?: Y
-[10/14] GitHub owner: UCL-ARC</code></pre>
-<p>for later commands and links to work)</p>
-<p>You will then get some helpful output telling you to run</p>
-<pre><code>gh repo create UCL-ARC/festival-of-drs-demo -d 'A cookiecutter package with UCL ARC recommendations.' --public -r origin --source festival-of-drs-demo</code></pre>
-<p>to create a repository on GitHub for the project if you have the GitHub command line interface installed.</p>
-<p>As we selected to deploy the documentation to GitHub pages we are also told some further configuration to the repository we need to do, namely to go to</p>
-<p>https://github.com/UCL-ARC/festival-of-drs-demo/settings/actions</p>
-<p>and set <code>Workflow permissions</code> to <code>Read and write permissions</code></p>
-<p>Once we have done that we can then make an initial commit and push to our newly created repository on GitHub</p>
-<pre><code>cd festival-of-drs-demo
-git add .
-git commit -m "Initial commit"
-git push --set-upstream origin main</code></pre>
-<p>If we now go to</p>
-<p>https://github.com/UCL-ARC/festival-of-drs-demo/</p>
-<p>we can see the repository is now populated with a README with some default content such as the project description, details of the project team, instructions for installing the package, running the tests and building the documentation locally (navigate to each of these sections in README). Using GitHub’s Citation File Format support we also have an easy way to automatically generate a citation for the repository (demo ‘Cite this repository’ button ).</p>
-<p>The repository has also been set up with automated workflows for running tests, performing linting static analysis checks on the source code and building the documentation the status of which we can see from the badges on README page (show badges) or by going to the Actions pane</p>
-<p>https://github.com/UCL-ARC/python-tooling/actions</p>
-<p>(Wait for <code>Documentation</code> workflow to complete to ensure <code>gh-pages</code> branch has been created and pushed to.)</p>
-<p>To enable the GitHub Page website for the repository there is one final step we need to do that is also printed in the message output by the <code>cookiecutter</code> command, which is to go to the settings page at</p>
-<p>https://github.com/UCL-ARC/festival-of-drs-demo/settings/pages</p>
-<p>and under ‘Built and deployment’ selecting ‘Deploy from a branch’ for the ‘Source’ drop-down and ‘gh-pages’ for the ‘Branch’ drop-down, leaving the branch path drop-down with its default value of ‘/ (root)’.</p>
-<p>Once the documentation deploy action has finished running</p>
-<p>https://github.com/UCL-ARC/python-tooling/actions</p>
-<p>(Wait for <code>pages-build-deployment</code> action to complete)</p>
-<p>the documentation can then be viewed at</p>
-<p>https://github-pages.arc.ucl.ac.uk/festival-of-drs-demo</p>
-<p>The documentation site homepage is automatically set up to show the content from the repository README. Importantly however we also get automatically generated API documentation from the docstrings in the source code (go to API reference page). The project LICENSE is also displayed in documentation (go to License page).</p>
+<pre><code>uvx cookiecutter gh:ucl-arc/python-tooling --checkout-latest</code></pre>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -410,9 +453,9 @@ git push --set-upstream origin main</code></pre>
       }</style></aside>
 </section>
 <section id="tutorial" class="slide level2">
-<h2>👨‍🏫 Tutorial</h2>
+<h2>🧑‍🏫 Tutorial</h2>
 
-<img data-src="images/2024-tutorial-qr-code.svg" class="r-stretch"><p><a href="https://tinyurl.com/python-tooling-tutorial" class="uri">https://tinyurl.com/python-tooling-tutorial</a></p>
+<img data-src="images/docs-tutorial-qr-code.gif" class="r-stretch"><p><a href="https://github-pages.arc.ucl.ac.uk/python-tooling/pages/tutorial.html" class="uri">https://github-pages.arc.ucl.ac.uk/python-tooling/pages/tutorial.html</a></p>
 
 
 </section>
